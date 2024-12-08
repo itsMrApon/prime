@@ -53,7 +53,7 @@
 							<div class="in-service-vertical-slider">
 								{{--  --}}
 								@unless(count($subcategories) == 0)
-								@foreach($subcategories as $subcategorie )
+								@foreach($subcategories as $subcategory )
 								{{--  --}}
 								<div class="in-service-item-slide">
 									<div class="in-service-item-5 d-flex align-items-center">
@@ -69,9 +69,10 @@
 											</div>
 										</div>
 										<div class="inner-text headline pera-content">
-											<h3><a href="{<a href="{{ route('subcategories.details', ['service_id' => $service->id, 'subcategory_id' => $subcategory->id]) }}">
-                    {{ $subcategory->name }} </a></h3>
-											<a class="more-btn" href="/front/services/inc_services/{{$subcategory->id}}">Read More <i class="far fa-long-arrow-right"></i></a>
+											<h3><a href="{{ route('services.details', ['serviceSlug' => $service->slug, 'subcategorySlug' => $subcategory->slug]) }}">
+												{{ ucfirst($subcategory->name) }}</a></h3>
+											<a class="more-btn" href="{{ route('services.details', ['serviceSlug' => $service->slug, 'subcategorySlug' => $subcategory->slug]) }}">
+												Read More <i class="far fa-long-arrow-right"></i></a>
 										</div>
 									</div>
 								</div>

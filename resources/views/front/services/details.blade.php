@@ -24,6 +24,7 @@
 									<div class="sub-title text-uppercase">
 										What We Offer
 									</div>
+									<h2>{{ $service->name }}</h2>
 									<h2>{{ $subcategory->name }}</h2>
 								</div>
 								<div class="in-service-title-desc">
@@ -32,11 +33,11 @@
 							</div>
 							<div class="in-service-details-list ul-li-block">
 								<ul>
-									<li>{{$subcategory->qoute1]}}</li>
-									<li>{{$subcategory->qoute2]}}</li>
-									<li>{{$subcategory->qoute3]}}</li>
-									<li>{{$subcategory->qoute4]}}</li>
-									<li>{{$subcategory->qoute5]}}</li>
+									<li>{{ $subcategory->qoute1 ?? 'No quote available' }}</li>
+									<li>{{ $subcategory->qoute2 ?? 'No quote available' }}</li>
+									<li>{{ $subcategory->qoute3 ?? 'No quote available' }}</li>
+									<li>{{ $subcategory->qoute4 ?? 'No quote available' }}</li>
+									<li>{{ $subcategory->qoute5 ?? 'No quote available' }}</li>
 								</ul>
 							</div>
 						</div>
@@ -60,10 +61,10 @@
 								<div class="sub-title text-uppercase">
 									your Benifit
 								</div>
-								<h2>{{$subcategory->benefits]}}</h2>
+								<h2>{{$subcategory->benefits}}</h2>
 							</div>
 							<div class="in-about-text-area-1 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
-								{{$subcategory->description2]}}
+								{{$subcategory->description2}}
 							</div>
 							<div class="in-btn-2 position-relative wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms">
 								<a href="#">Get Started Now</a>

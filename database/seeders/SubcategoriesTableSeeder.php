@@ -11,7 +11,7 @@ class SubcategoriesTableSeeder extends Seeder
         \App\Models\User::factory(50)->create();
         // Subcategories for INC Insurance
         Subcategory::create([
-            'subcategory_id' => 1,
+            'service_id' => 1,
             'name' => 'Auto Insurance',
             'route' => 'auto_insurance',
             'tags' => 'insurance, auto',
@@ -27,7 +27,7 @@ class SubcategoriesTableSeeder extends Seeder
             'price' => '150',
         ]);
         Subcategory::create([
-                'subcategory_id' => 1,
+                'service_id' => 1,
                 'name' => 'Home insurance',
                 'route' => 'home_insurance',
                 'tags' => 'insurance, ',
@@ -43,7 +43,7 @@ class SubcategoriesTableSeeder extends Seeder
                 'price' => '100',
             ]);
             Subcategory::create([
-                'subcategory_id' => 1,
+                'service_id' => 1,
                 'name' => 'Business insurance',
                 'route' => 'business_insurance',
                 'tags' => 'insurance, Business',
@@ -59,7 +59,7 @@ class SubcategoriesTableSeeder extends Seeder
                 'price' => '100',
             ]);
             Subcategory::create([
-                'subcategory_id' => 1,
+                'service_id' => 1,
                 'name' => 'Life insurance',
                 'route' => 'life_insurance',
                 'tags' => 'insurance, Life',
@@ -75,7 +75,7 @@ class SubcategoriesTableSeeder extends Seeder
                 'price' => '100',
             ]);
             Subcategory::create([
-                'subcategory_id' => 1,
+                'service_id' => 1,
                 'name' => 'Motorcycle insurance',
                 'route' => 'motorcycle_insurance',
                 'tags' => 'insurance, Motorcycle',
@@ -91,7 +91,7 @@ class SubcategoriesTableSeeder extends Seeder
                 'price' => '100',
             ]);
             Subcategory::create([
-                'subcategory_id' => 1,
+                'service_id' => 1,
                 'name' => 'Recreational insurance',
                 'route' => 'recreational_insurance',
                 'tags' => 'insurance, Recreational',
@@ -107,7 +107,7 @@ class SubcategoriesTableSeeder extends Seeder
                 'price' => '100',
             ]);
             Subcategory::create([
-                'subcategory_id' => 1,
+                'service_id' => 1,
                 'name' => 'Umbrella insurance',
                 'route' => 'umbrella_insurance',
                 'tags' => 'insurance, Umbrella',
@@ -123,7 +123,7 @@ class SubcategoriesTableSeeder extends Seeder
                 'price' => '100',
             ]);
             Subcategory::create([
-                'subcategory_id' => 1,
+                'service_id' => 1,
                 'name' => 'Disability insurance',
                 'route' => 'disability_insurance',
                 'tags' => 'insurance, Disability',
@@ -139,7 +139,7 @@ class SubcategoriesTableSeeder extends Seeder
                 'price' => '100',
             ]);
             Subcategory::create([
-                'subcategory_id' => 1,
+                'service_id' => 1,
                 'name' => 'Renters Insurance',
                 'route' => 'renters_insurance',
                 'tags' => 'insurance, Renters',
@@ -155,7 +155,7 @@ class SubcategoriesTableSeeder extends Seeder
                 'price' => '100',
             ]);
             Subcategory::create([
-                'subcategory_id' => 1,
+                'service_id' => 1,
                 'name' => 'Liability insurance',
                 'route' => 'liability_insurance',
                 'tags' => 'insurance, Liability',
@@ -172,7 +172,7 @@ class SubcategoriesTableSeeder extends Seeder
             ]);
             // TLC Services Subcategories
             Subcategory::create([
-                'subcategory_id' => 2,
+                'service_id' => 2,
                 'name' => 'Black Cab Insurance',
                 'route' => 'blackcab_insurance',
                 'tags' => 'insurance, blackcab',
@@ -188,7 +188,7 @@ class SubcategoriesTableSeeder extends Seeder
                 'price' => '150',
             ]);
             Subcategory::create([
-                'subcategory_id' => 2,
+                'service_id' => 2,
                 'name' => 'Yellow Cab Insurance',
                 'route' => 'yellow_insurance',
                 'tags' => 'insurance, yellowcab',
@@ -204,7 +204,7 @@ class SubcategoriesTableSeeder extends Seeder
                 'price' => '150',
             ]);
             Subcategory::create([
-                'subcategory_id' => 2,
+                'service_id' => 2,
                 'name' => 'Green Cab insurance',
                 'route' => 'greencab_insurance',
                 'tags' => 'insurance, greencab',
@@ -218,6 +218,7 @@ class SubcategoriesTableSeeder extends Seeder
                 'benefits' => 'Insurance With PrimeOne Comes excellence.',
                 'description2' => 'Choosing our Renters insurance means more than just coverage – it means safeguarding your journey with confidence. Heres how you benefit',
                 'price' => '100',
+                
             ]);
     }
 }

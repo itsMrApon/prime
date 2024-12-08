@@ -31,10 +31,10 @@ Route::get('/testimonial3', [PagesController::class, 'testimonial3']);
 
 
 // Services Page - Show all main services
-Route::get('/services', [ServiceController::class, 'index'])->name('front.services.index');
+Route::get('/services', [ServiceController::class, 'index'])->name('services.index');
 
 // Subcategories Page - Show subcategories of a specific service
-Route::get('/services/{service}', [SubcategoryController::class, 'index'])->name('front.services.subcategories.index');
+Route::get('/services/{serviceSlug}', [ServiceController::class, 'show'])->name('services.show');
 
 // Details Page - Show details of a specific subcategory
-Route::get('/subcategories/{subcategory}', [SubcategoryController::class, 'show'])->name('front.services.subcategories.show');
+Route::get('/services/{serviceSlug}/subcategory/{subcategorySlug}', [ServiceController::class, 'details'])->name('services.details');

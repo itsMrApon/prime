@@ -32,10 +32,8 @@
 					<div class="col-lg-4 col-md-6">
 						<div class="in-service-item-3 position-relative">
 							<div class="inner-text headline pera-content">
-								<h3><a href="{{$service->id}}"> {{$service->name}} </a></h3>
-								<p>Leverage agile frameworks provide
-									synopsis for high level overviews
-								Iterative approaches.</p>
+								<h3><a href="{{ route('services.show', ['serviceSlug' => $service->slug]) }}">{{ ucfirst($service->name) }}</a></h3>
+								<p>{{ucfirst($service->details)}}.</p>
 							</div>
 							<div class="inner-icon-btn d-flex align-items-center justify-content-between">
 								<div class="inner-icon">
