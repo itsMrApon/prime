@@ -17,18 +17,27 @@ class CreateSubcategoriesTable extends Migration
             $table->id();
             $table->foreignId('service_id')->constrained()->onDelete('cascade'); // Links to subcategories
             $table->string('name');
-            $table->string('route');
-            $table->string('tags');
             $table->string('moto');
-            $table->string('qoute1');
-            $table->string('qoute2');
-            $table->string('qoute3');
-            $table->string('qoute4');
-            $table->string('qoute5');
+            $table->string('tag1');
+            $table->string('tag2');
+            $table->string('tag3');
+            $table->string('tag4');
+            $table->string('tag5');
             $table->mediumText('description');
-            $table->string('benefits');
-            $table->mediumText('description2');
-            $table->string('price');
+            $table->string('user');
+            $table->mediumText('benefit');
+            $table->double('baseprice');
+            $table->double('standerdprice');
+            $table->double('premiumprice');
+            $table->string('plan1');
+            $table->string('plan2');
+            $table->string('plan3');
+            $table->string('plan4');
+            $table->string('plan5');
+            $table->string('plan6');
+            $table->string('plan7');
+            $table->string('plan8');
+            $table->string('plan9');
             $table->timestamps();
         });
     }

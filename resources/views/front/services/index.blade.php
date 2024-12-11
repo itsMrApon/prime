@@ -23,17 +23,18 @@
 
 <!-- Start of Service section
 	============================================= -->
-	@unless(count($services) == 0)
-	@foreach($services as $service )
+
 	<section id="in-service-page-service-1" class="in-service-page-service-section-1">
 		<div class="container">
 			<div class="in-service-content-3">
 				<div class="row justify-content-center">
+					@unless(count($services) == 0)
+					@foreach($services as $service )
 					<div class="col-lg-4 col-md-6">
 						<div class="in-service-item-3 position-relative">
 							<div class="inner-text headline pera-content">
 								<h3><a href="{{ route('services.show', ['serviceSlug' => $service->slug]) }}">{{ ucfirst($service->name) }}</a></h3>
-								<p>{{ucfirst($service->details)}}.</p>
+								<p>{{ucfirst($service->description)}}.</p>
 							</div>
 							<div class="inner-icon-btn d-flex align-items-center justify-content-between">
 								<div class="inner-icon">
@@ -45,14 +46,15 @@
 							</div>
 						</div>
 					</div>
+					@endforeach
+					@else
+					<p>No services found</p>
+					@endunless
 				</div>
 			</div>
 		</div>
 	</section>
-@endforeach
-@else
-<p>No services found</p>
-@endunless				
+			
 <!-- End of Service section
 	============================================= -->
 

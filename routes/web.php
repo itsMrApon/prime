@@ -37,4 +37,4 @@ Route::get('/services', [ServiceController::class, 'index'])->name('services.ind
 Route::get('/services/{serviceSlug}', [ServiceController::class, 'show'])->name('services.show');
 
 // Details Page - Show details of a specific subcategory
-Route::get('/services/{serviceSlug}/subcategory/{subcategorySlug}', [ServiceController::class, 'details'])->name('services.details');
+Route::get('/services/{serviceSlug}/{subcategorySlug}', [ServiceController::class, 'details'])->name('services.details');
